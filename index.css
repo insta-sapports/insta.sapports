@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.facebook-login {
+    background-color: #3897f0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    color: #8e8e8e;
+    font-size: 12px;
+    position: relative;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    height: 1px;
+    background-color: #ddd;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.login-form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.forgot-password {
+    font-size: 12px;
+    color: #00376b;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signup {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.signup-link {
+    color: #00376b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.footer a {
+    color: #00376b;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    padding-right: 80px; /* Увеличим отступ, чтобы кнопка не перекрывала текст */
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #3897f0;
+    font-size: 14px;
+    cursor: pointer;
+    display: none; /* Кнопка скрыта по умолчанию */
+}
+
+.toggle-password.show {
+    display: inline; /* Показываем кнопку, когда есть символы */
+}
